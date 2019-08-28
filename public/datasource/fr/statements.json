@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Catégorie 1",
+        "statements": [
+            {
+                "id": 1,
+                "name": "Statement 1"
+            },
+            {
+                "id": 2,
+                "name": "Statement 2"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Catégorie 2",
+        "statements": [
+            {
+                "id": 1,
+                "name": "Statement 1"
+            },
+            {
+                "id": 2,
+                "name": "Statement 2"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Catégorie 3",
+        "statements": [
+            {
+                "id": 1,
+                "name": "Statement 1"
+            },
+            {
+                "id": 2,
+                "name": "Statement 2"
+            }
+        ]
+    }
+]

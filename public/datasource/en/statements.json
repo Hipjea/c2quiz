@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Communication",
+        "statements": [
+            {
+                "id": 1,
+                "name": "I communicate transparently, stating clearly, what I want to express."
+            },
+            {
+                "id": 2,
+                "name": "I can change my viewpoint based on the valid opinion of others."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Teamwork",
+        "statements": [
+            {
+                "id": 3,
+                "name": "I listen carefully to what the other team members have to say."
+            },
+            {
+                "id": 4,
+                "name": "I encourage quiet group members to contribute."
+            },
+            {
+                "id": 5,
+                "name": "I am willing to compromise my own view to obtain a group consensus."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Category 3",
+        "statements": [
+            {
+                "id": 6,
+                "name": "Statement 1"
+            },
+            {
+                "id": 7,
+                "name": "Statement 2"
+            }
+        ]
+    }
+]
