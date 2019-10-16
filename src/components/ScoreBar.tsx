@@ -43,7 +43,7 @@ class ScoreBar extends Component<IProps, IState> {
         this.emoji4 = React.createRef();
     }
 
-    componentWillReceiveProps(newProps: any) {
+    UNSAFE_componentWillReceiveProps(newProps: any) {
         if (newProps.answers) {
             this.parseAnswers(newProps.answers);
         }

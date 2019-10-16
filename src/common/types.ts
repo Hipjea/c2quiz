@@ -4,6 +4,8 @@ export interface TApplicationState {
     settings: any;
     category: any;
     answer: any;
+    external: any;
+    result: any;
 }
 
 export interface TSettingsData {
@@ -39,4 +41,24 @@ export interface TAnswersData {
 export interface TAnswerData {
     statement: number;
     answer: number;
+}
+
+export interface TExternalData {}
+
+export interface TResultsData {
+    results: Array<TResultData>;
+}
+
+export interface TResultData {
+    category: Array<TResCategoryData>;
+}
+
+export interface TResCategoryData {
+    name: string;
+    subcategories: Array<TResSubcategoryData>;
+}
+
+export interface TResSubcategoryData {
+    name: string;
+    score: number;
 }

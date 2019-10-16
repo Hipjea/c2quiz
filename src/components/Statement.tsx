@@ -8,6 +8,7 @@ interface IProps {
     key: number;
     statement: TStatementData;
     getAnswers: any;
+    answers: TAnswersData;
 }
 
 interface IRecipeState {
@@ -28,7 +29,14 @@ class Statement extends Component<IProps, IState> {
         };
     }
 
-    componentWillReceiveProps(newProps: any) {
+    componentDidMount() {
+        const answers = this.props.answers;
+        if (answers) {
+            this.checkIsAnswered(answers);
+        }
+    }
+
+    UNSAFE_componentWillReceiveProps(newProps: any) {
         if (newProps.answers) {
             this.checkIsAnswered(newProps.answers);
         }

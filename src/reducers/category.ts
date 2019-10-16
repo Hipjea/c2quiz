@@ -7,7 +7,7 @@ import { 
 
 const initialState: TCategoriesData = {
   lang: 'en',
-  perStep: 2,
+  perStep: 1,
   currentStep: 1,
   maxStep: 1,
   categories: [],
@@ -21,13 +21,14 @@ export function reducer(state = initialState, action: any): TCategoriesData {
         ...state, 
         categories: action.payload,
         activeCategories: action.payload.slice(0, state.perStep),
-        maxStep: action.payload.length-1
+        maxStep: action.payload.length
       };
     case CHANGE_STEP:
       const way = action.payload;
       const nextStep: number = way === "up" ? state.currentStep+1 : state.currentStep-1;
-      const maxCat: number = nextStep*2;
+      const maxCat: number = nextStep;
       const minCat: number = maxCat-state.perStep;
+
       return {
         ...state,
         currentStep: nextStep,

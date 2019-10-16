@@ -65,6 +65,14 @@ header.header h1 {
     padding: 1px 10px;
 }
 
+.subtitle.bigcategory {
+    color: #000000;
+    background: transparent;
+    font-weight: 500;
+    font-size: 2em;
+    padding: 0px;
+}
+
 .btn {
     border: 0;
     font-size: 1.1em;
@@ -78,6 +86,10 @@ header.header h1 {
 }
 .btn:hover {
     cursor: pointer;
+}
+
+.separator {
+    width: 10px;
 }
 
 .settings {
@@ -208,19 +220,19 @@ header.header h1 {
 
 .scale-row .scale-cell.scale-1.selected,
 .score-bar .score-item:nth-child(1) .badge {
-    background-color: #ff5990;
+    background-color: #eb343d;
 }
 .scale-row .scale-cell.scale-2.selected,
 .score-bar .score-item:nth-child(2) .badge {
-    background-color: #ff9b30;
+    background-color: #af0be6;
 }
 .scale-row .scale-cell.scale-3.selected,
 .score-bar .score-item:nth-child(3) .badge {
-    background-color: #58c46e;
+    background-color: #0279e8;
 }
 .scale-row .scale-cell.scale-4.selected,
 .score-bar .score-item:nth-child(4) .badge {
-    background-color: #4286f4;
+    background-color: #58c46e;
 }
 
 .scale-row .scale-cell.selected .emoji {
@@ -334,4 +346,4 @@ footer {
       opacity: 1;
     }
 }
-  
+

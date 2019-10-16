@@ -1,48 +1,594 @@
 [
     {
         "id": 1,
-        "name": "Communication",
-        "statements": [
+        "name": "Compétences sociales (inter-personnelles)",
+        "children": [
             {
                 "id": 1,
-                "name": "I communicate transparently, stating clearly, what I want to express."
+                "name": "Communication",
+                "statements": [
+                    {
+                        "id": 1,
+                        "name": "Je communique de façon transparente, établissant clairement ce que je veux exprimer."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Je peux modifier mon point de vue à partir d'une opinion pertinente des autres."
+                    },
+                    {
+                        "id": 3,
+                        "name": "Je personnalise mon message pour m'adapter aux personnes à qui je parle."
+                    },
+                    {
+                        "id": 4,
+                        "name": "Je trouve facile d'écouter ce que les autres ont à dire sans les interrompre."
+                    },
+                    {
+                        "id": 5,
+                        "name": "Quand quelqu'un me parle, je pense à ce que je vais dire ensuite pour que mon opinion soit bien comprise."
+                    },
+                    {
+                        "id": 6,
+                        "name": "Les visuels de ma présentation s'accordent bien avec l'information que je communique."
+                    },
+                    {
+                        "id": 7,
+                        "name": "Pour préparer ma présentation, je réfléchis attentivement au message que je veux envoyer."
+                    },
+                    {
+                        "id": 8,
+                        "name": "J'utilise des modèles organisationnels (introduction et conclusion spécifiques, développement avec un plan, transitions) de manière à ce que ma communication soit aussi claire que possible."
+                    },
+                    {
+                        "id": 9,
+                        "name": "Je prête attention à mon comportement non-verbal, comme les expression du visage et le contact visuel, pour être sûr de rester au contact de mon auditoire."
+                    },
+                    {
+                        "id": 10,
+                        "name": "J'encourage mon auditoire à poser des questions à la fin de ma présentation."
+                    },
+                    {
+                        "id": 11,
+                        "name": "Quand je parle aux gens, je prête attention à leur langage corporel."
+                    },
+                    {
+                        "id": 12,
+                        "name": "Quand j'anime une réunion, j'essaie de réduire les risques de conflits."
+                    },
+                    {
+                        "id": 13,
+                        "name": "Je tiens compte des barrières culturelles quand j'organise mes communications."
+                    },
+                    {
+                        "id": 14,
+                        "name": "Avant de communiquer, je pense à ce que les personnes ont besoin de savoir, et à la meilleure manière d'en faire part."
+                    },
+                    {
+                        "id": 15,
+                        "name": "Quand j'écris un mémo, un courriel ou un autre document, je donne tous les éléments de contextes et les détails possibles pour être sûr que le message est compris."
+                    },
+                    {
+                        "id": 16,
+                        "name": "J'utilise des contenus appropriés, pertinents et convaincants pour illustrer un sujet."
+                    },
+                    {
+                        "id": 17,
+                        "name": "J'utilise des sources de qualité, crédibles et pertinentes pour développer des idées appropriées pour la discipline et le style de mes écrits."
+                    }
+                ]
             },
             {
                 "id": 2,
-                "name": "I can change my viewpoint based on the valid opinion of others."
+                "name": "Travail en équipe",
+                "statements": [
+                    {
+                        "id": 18,
+                        "name": "J'écoute attentivement ce que les autres membres de l'équipe ont à dire."
+                    },
+                    {
+                        "id": 19,
+                        "name": "J'encourage les membres du groupe qui restent silencieux à participer."
+                    },
+                    {
+                        "id": 20,
+                        "name": "Je suis capable de remettre en question mon propre point de vue pour obtenir un consensus de groupe."
+                    },
+                    {
+                        "id": 21,
+                        "name": "J'utilise l'humour pour évacuer la pression dans les groupes au sein desquels je travaille."
+                    },
+                    {
+                        "id": 22,
+                        "name": "J'essaie fortement de maintenir un niveau élevé d'énergie dans le groupe."
+                    },
+                    {
+                        "id": 23,
+                        "name": "J'essaie de conserver des relations harmonieuses entre les membres du groupe."
+                    },
+                    {
+                        "id": 24,
+                        "name": "J'utilise des analyses objectives et critiques pour prendre des décisions."
+                    },
+                    {
+                        "id": 25,
+                        "name": "Je peux utiliser une large étendue d'outils de travail en groupe (brainstorming, organisation structurées, réunions, etc.) de manière efficace."
+                    },
+                    {
+                        "id": 26,
+                        "name": "Je rebondis sur ce que les autres ont dit."
+                    },
+                    {
+                        "id": 27,
+                        "name": "Je n'autorise pas le groupe à dépasser la limite du temps imparti."
+                    },
+                    {
+                        "id": 28,
+                        "name": "Je suggère de nouvelles façons de regarder les problèmes."
+                    },
+                    {
+                        "id": 29,
+                        "name": "Dans les réunions, je prends le rôle de modérateur/facilitateur lorsque c'est nécessaire."
+                    },
+                    {
+                        "id": 30,
+                        "name": "J'aide mon équipe à avoir une meilleure compréhension de l'enjeu ou à atteindre un consensus."
+                    },
+                    {
+                        "id": 31,
+                        "name": "J'introduis de nouvelles idées dans les groupes au sein desquels je travaille."
+                    },
+                    {
+                        "id": 32,
+                        "name": "Je suis un optimiste qui tend à voir le bon côté des choses."
+                    },
+                    {
+                        "id": 33,
+                        "name": "Je fais en sorte que toutes les possibilités soient explorées."
+                    },
+                    {
+                        "id": 34,
+                        "name": "Je comprends que le travail en équipe implique des individus coopérant et collaborant de façon à maximiser les résultats pour atteindre un but commun."
+                    },
+                    {
+                        "id": 35,
+                        "name": "J'aide les autres à trouver un compromis entre différents points de vue."
+                    },
+                    {
+                        "id": 36,
+                        "name": "Je suis une personne bien organisée qui est bonne pour respecter les délais."
+                    },
+                    {
+                        "id": 37,
+                        "name": "Je soutiens et j'encourage les autres membres de l'équipe."
+                    },
+                    {
+                        "id": 38,
+                        "name": "Je clarifie les contributions d'autres personnes."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Gestion des conflits",
+                "statements": [
+                    {
+                        "id": 39,
+                        "name": "J'agis calmement dans les situations de pression."
+                    },
+                    {
+                        "id": 40,
+                        "name": "Je traite les membres de mon équipe avec respect."
+                    },
+                    {
+                        "id": 41,
+                        "name": "Je ne parle jamais des gens dans leur dos."
+                    },
+                    {
+                        "id": 42,
+                        "name": "J'accueille les suggestions d'amélioration de la part de mon équipe."
+                    },
+                    {
+                        "id": 43,
+                        "name": "Je comprends que le travail d'équipe requiert un management efficace et la négociation d'une dynamique de groupe inhérente au travail d'équipe."
+                    },
+                    {
+                        "id": 44,
+                        "name": "Je suis conscient du lien entre personnalité et style de gestion de conflit."
+                    },
+                    {
+                        "id": 45,
+                        "name": "J'explore les problèmes avec les autres, de manière à trouver des solutions qui répondent aux besoins de chacun."
+                    },
+                    {
+                        "id": 46,
+                        "name": "J'évalue et j'adopte diverses perspectives face à des prises de position multiples et conflictuelles (en termes culturel, disciplinaire et éthique)."
+                    },
+                    {
+                        "id": 47,
+                        "name": "La résolution de conflits interpersonnels est une activité que j'apprécie."
+                    },
+                    {
+                        "id": 48,
+                        "name": "Je modifie souvent légèrement mes objectifs de manière à répondre aux besoins des autres."
+                    },
+                    {
+                        "id": 49,
+                        "name": "Quand un conflit émerge, j'ai l'habitude d'ajuster mes priorités pour trouver une solution."
+                    },
+                    {
+                        "id": 50,
+                        "name": "Pendant un conflit, j'essaie de trouver un compromis."
+                    },
+                    {
+                        "id": 51,
+                        "name": "Quand il y a un désaccord, je recueille le plus d'information possible et je garde ouvertes les lignes de ma communication."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Négociation",
+                "statements": [
+                    {
+                        "id": 52,
+                        "name": "Si quelque chose a besoin d'être négocié, je me porte tout de suite volontaire pour le faire."
+                    },
+                    {
+                        "id": 53,
+                        "name": "Je viens avec une stratégie qui me permet d'orienter la négociation dans mon sens."
+                    },
+                    {
+                        "id": 54,
+                        "name": "Je ferai des choses pour que nous puissions tous les deux obtenir ce que nous voulons de la négociation."
+                    },
+                    {
+                        "id": 55,
+                        "name": "Je fais certaines choses spécifiquement de manière à m'assurer que la négociation reste amicale et confortable."
+                    },
+                    {
+                        "id": 56,
+                        "name": "Je pourrais me mettre en quatre pour être sûr que le résultat est juste pour l'autre personne."
+                    },
+                    {
+                        "id": 57,
+                        "name": "Je fais en sorte d'être sûr que les besoins des deux parties soient compris de manière à ce que chacun s'en sorte favorablement."
+                    },
+                    {
+                        "id": 58,
+                        "name": "Si l'autre personne fait un compromis, je fais un compromis également."
+                    },
+                    {
+                        "id": 59,
+                        "name": "J'essaie de voir les choses avec le point de vue de l'autre et je suis attentif à ses besoins."
+                    }
+                ]
             }
         ]
     },
     {
         "id": 2,
-        "name": "Teamwork",
-        "statements": [
-            {
-                "id": 3,
-                "name": "I listen carefully to what the other team members have to say."
-            },
-            {
-                "id": 4,
-                "name": "I encourage quiet group members to contribute."
-            },
+        "name": "Compétences personnelles (intra-personnelles)",
+        "children": [
             {
                 "id": 5,
-                "name": "I am willing to compromise my own view to obtain a group consensus."
+                "name": "Leadership",
+                "statements": [
+                    {
+                        "id": 60,
+                        "name": "Je peux expliquer comment le leadership fonctionne et comment il est compris dans les organisations."
+                    },
+                    {
+                        "id": 61,
+                        "name": "Je peux identifier mes forces et mes besoins de développement."
+                    },
+                    {
+                        "id": 62,
+                        "name": "Je suis très motivé parce que je sais que je possède ce qu'il faut pour réussir."
+                    },
+                    {
+                        "id": 63,
+                        "name": "J'ai une vision de ce vers quoi je me dirige."
+                    },
+                    {
+                        "id": 64,
+                        "name": "J'ai une vision de l'héritage que je veux laisser."
+                    },
+                    {
+                        "id": 65,
+                        "name": "Je peux décrire les qualités et les comportements des dirigeants efficaces."
+                    },
+                    {
+                        "id": 66,
+                        "name": "Je raconte des histoires qui concernent les personnes clés et les événements qui ont forgé mes valeurs."
+                    },
+                    {
+                        "id": 67,
+                        "name": "Je sais que différentes situations nécessitent différents styles de leadership."
+                    },
+                    {
+                        "id": 68,
+                        "name": "Je peux adapter mon style pour correspondre à la situation."
+                    },
+                    {
+                        "id": 69,
+                        "name": "Je suis capable de délimiter et de maintenir des frontières entre différentes sphères de ma propre vie."
+                    },
+                    {
+                        "id": 70,
+                        "name": "Je communique avec les personnes importantes pour moi (à la fois en contexte professionnel et familial) concernant nos attentes réciproques, et je m'assure que ces attentes sont claires."
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Auto-évaluation",
+                "statements": [
+                    {
+                        "id": 71,
+                        "name": "Je fixe des buts, des indicateurs et des objectifs."
+                    },
+                    {
+                        "id": 72,
+                        "name": "Je me focalise sur les résultats de mes efforts pour atteindre des objectifs et estimer différents moyens pour y parvenir."
+                    },
+                    {
+                        "id": 73,
+                        "name": "Je me sens responsable pour faire ce qui est le plus important dans ma vie."
+                    },
+                    {
+                        "id": 74,
+                        "name": "Je peux déterminer les échéances, les tâches, les responsabilités et les ressources requises pour réaliser les améliorations identifiées et recherchées."
+                    },
+                    {
+                        "id": 75,
+                        "name": "Je peux mesurer les résultats d'une amélioration au vu des indicateurs de performance."
+                    },
+                    {
+                        "id": 76,
+                        "name": "Je peux identifier les causes des différences entre les résultats et les performances attendues."
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "name": "Adaptabilité et flexibilité",
+                "statements": [
+                    {
+                        "id": 77,
+                        "name": "Je suis capable de remettre en question les vieilles habitudes et d'innover dans la manière de gérer les défis de la vie."
+                    },
+                    {
+                        "id": 78,
+                        "name": "Je peux identifier la nature du changement."
+                    },
+                    {
+                        "id": 79,
+                        "name": "Je cherche des occasions d'encourager les autres à apprendre de nouvelles façons de faire les choses."
+                    },
+                    {
+                        "id": 80,
+                        "name": "Je remets en question les représentations habituelles de la manière dont les choses sont faites, en expérimentant des manières de rendre les choses aussi bonnes que possibles."
+                    },
+                    {
+                        "id": 81,
+                        "name": "Je peux identifier et analyser différents aspects importants d'une situation pour atteindre des buts particuliers, et je suis capable d'estimer comment et selon quelles modalités ces aspects doivent être adaptés en fonction des évolutions."
+                    }
+                ]
             }
         ]
     },
     {
         "id": 3,
-        "name": "Category 3",
-        "statements": [
+        "name": "Compétences méthodologiques",
+        "children": [
             {
-                "id": 6,
-                "name": "Statement 1"
+                "id": 8,
+                "name": "Apprendre à apprendre",
+                "statements": [
+                    {
+                        "id": 82,
+                        "name": "Je peux évaluer les efforts nécessaires à un changement de process."
+                    },
+                    {
+                        "id": 83,
+                        "name": "Je fixe des objectifs avec des critères de réussite pour mon travail et mon développement personnel."
+                    },
+                    {
+                        "id": 84,
+                        "name": "J'évalue la tâche et j'esquisse des conclusions sur la meilleure façon d'y parvenir."
+                    },
+                    {
+                        "id": 85,
+                        "name": "Je relie mes propres idées et expériences à celles des autres."
+                    },
+                    {
+                        "id": 86,
+                        "name": "J'élabore à partir des idées des autres."
+                    },
+                    {
+                        "id": 87,
+                        "name": "Je recherche le changement, le percevant comme une opportunité plutôt que comme une source de peur."
+                    },
+                    {
+                        "id": 88,
+                        "name": "Je recherche un conseil, une information et du soutien lorsque c'est nécessaire."
+                    },
+                    {
+                        "id": 89,
+                        "name": "Je suis capable d'organiser de manière autonome mon apprentissage personnel."
+                    },
+                    {
+                        "id": 90,
+                        "name": "Je réfléchis de manière critique sur les raisons et les buts de l'apprentissage."
+                    },
+                    {
+                        "id": 91,
+                        "name": "J'équilibre les études avec d'autres parties de ma vie."
+                    },
+                    {
+                        "id": 92,
+                        "name": "Je connais l'importance qu'a pour moi-même chaque aspect de ma vie."
+                    },
+                    {
+                        "id": 93,
+                        "name": "Je connais et je comprends mes stratégies d'apprentissage favorites."
+                    },
+                    {
+                        "id": 94,
+                        "name": "Je connais mes forces et mes faiblesses en contexte d'apprentissage."
+                    },
+                    {
+                        "id": 95,
+                        "name": "J'identifie mes besoins d'apprentissage et j'organise des actions pour y répondre."
+                    },
+                    {
+                        "id": 96,
+                        "name": "Je sais ce qu'il faut faire pour combler l'écart entre ce que je sais et ce que j'ai besoin de savoir pour être performant."
+                    }
+                ]
             },
             {
-                "id": 7,
-                "name": "Statement 2"
-            }
+                "id": 9,
+                "name": "Compétences analytiques",
+                "statements": [
+                    {
+                        "id": 97,
+                        "name": "Je peux efficacement définir la portée d'une question de recherche."
+                    },
+                    {
+                        "id": 98,
+                        "name": "Je peux déterminer efficacement les concepts-clés."
+                    },
+                    {
+                        "id": 99,
+                        "name": "Je peux identifier une question raisonnable pour répondre à des aspects potentiellement significatifs mais encore peu explorés du sujet."
+                    },
+                    {
+                        "id": 100,
+                        "name": "Je peux choisir des sources d'information variées appropriées au périmètre et à la discipline liée à ma question de recherche."
+                    },
+                    {
+                        "id": 101,
+                        "name": "Je sélectionne des sources directement reliées aux concepts-clés ou à la question de recherche."
+                    },
+                    {
+                        "id": 102,
+                        "name": "Je peux utiliser de multiples critères pour sélectionner des sources (tels que la pertinence vis-à-vis de la question de recherche, l'actualité, l'autorité, l'audiance, et leurs biais ou leur point de vue)."
+                    },
+                    {
+                        "id": 103,
+                        "name": "Je communique, organise et synthétise de l'information sourcée pour atteindre pleinement un but spécifique avec clarté et profondeur."
+                    },
+                    {
+                        "id": 104,
+                        "name": "Je peux analyser, synthétiser et évaluer la qualité de l'information."
+                    },
+                    {
+                        "id": 105,
+                        "name": "Je peux voir les connexions dans une situation concrète."
+                    },
+                    {
+                        "id": 106,
+                        "name": "Je sais reconnaître les incohérences et les vides dans la logique et les idées inexploitées."
+                    },
+                    {
+                        "id": 107,
+                        "name": "Ma conclusion repose sur l'extrapolation logique de l'analyse et des résultats d'enquête."
+                    },
+                    {
+                        "id": 108,
+                        "name": "Je peux mettre l'accent sur les limites et les conséquences."
+                    },
+                    {
+                        "id": 109,
+                        "name": "Je discute en détail des limites et des implications pertinentes et compatibles."
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "name": "Créativité et innovation",
+                "statements": [
+                    {
+                        "id": 110,
+                        "name": "Je peux développer une idée, une question, un format ou un produit de manière nouvelle ou originale pour créer un nouveau savoir."
+                    },
+                    {
+                        "id": 111,
+                        "name": "Je peux convertir des idées ou des solutions en formes entièrement nouvelles."
+                    },
+                    {
+                        "id": 112,
+                        "name": "Je peux incorporer de nouvelles directions ou approches pour achever une tâche nécessaire."
+                    },
+                    {
+                        "id": 113,
+                        "name": "Je peux employer des stratégies pour m'engager dans un paysage professionnel en changement permanent."
+                    },
+                    {
+                        "id": 114,
+                        "name": "Je peux réagir de façon créative face aux problèmes et aux opportunités."
+                    },
+                    {
+                        "id": 115,
+                        "name": "Je peux évaluer mon processus et mes productions créatives en utilisant des critères adaptés au domaine en question."
+                    },
+                    {
+                        "id": 116,
+                        "name": "J'utilise des cadres de travail et des stratégies pour permettre un environnement coopératif créatif et innovant (par exemple, échanger des idées sur les forums en ligne, faciliter les process d'équipe dans une ambiance de respect mutuel et de collaboration)."
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "name": "Résolution de problèmes",
+                "statements": [
+                    {
+                        "id": 117,
+                        "name": "Je peux identifier et analyser des problèmes dans des situations difficiles et procéder à une évaluation justifiée."
+                    },
+                    {
+                        "id": 118,
+                        "name": "Je vois les difficultés, les plaintes et les engorgements comme des chances plus que comme des problèmes."
+                    }, 
+                    {
+                        "id": 119,
+                        "name": "Je trouve des idées et je cherche des solutions alternatives."
+                    }, 
+                    {
+                        "id": 120,
+                        "name": "Quand je collecte des informations sur un problème, j'envisage des solutions qui ont déjà fonctionné ailleurs par le passé."
+                    }, 
+                    {
+                        "id": 121,
+                        "name": "Je tire mes conclusions en me basant sur des preuves solides."
+                    }, 
+                    {
+                        "id": 122,
+                        "name": "Je présente les idées liées à un concept comme la conséquence de lectures, recherches, discussions et brainstormings axées sur un travail très spécifique."
+                    }, 
+                    {
+                        "id": 123,
+                        "name": "Quand je résous un problème, j'essaie de repenser à ma façon ordinaire de réfléchir à une question pour aboutir à une vision plus profonde."
+                    }, 
+                    {
+                        "id": 124,
+                        "name": "Je recueille des informations depuis un large éventail de sources pour rester au courant de ce qui se passe dans mon domaine de travail."
+                    }, 
+                    {
+                        "id": 125,
+                        "name": "Je recherche toujours les causes des problèmes de manière à pouvoir comprendre ce qui se passe réellement."
+                    }, 
+                    {
+                        "id": 126,
+                        "name": "Je donne des preuves et/ou des contre-exemples."
+                    }, 
+                    {
+                        "id": 127,
+                        "name": "J'intègre pleinement des perspectives ou des idées alternatives, divergentes ou contradictoires."
+                    }
+                ]
+            } 
         ]
     }
 ]

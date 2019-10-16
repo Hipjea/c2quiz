@@ -6,7 +6,7 @@ import * as answerActions from '../actions/answer';
 interface IProps {
     statementId: number;
     settings: TSettingsData;
-    answers?: TAnswersData;
+    answers: any;
     addAnswer: any;
 }
 
@@ -50,7 +50,18 @@ class ScaleRow extends Component<IProps, IRecipeState> {
     }
 
     getClassName = (id: number) => {
-        return this.state.selected === id ? `scale-cell scale-${id} selected` : `scale-cell scale-${id}`;
+        const answers = this.props.answers;
+        if (this.state.selected === id) {
+            return `scale-cell scale-${id} selected`;
+        } else {
+            const foundIndex = answers.findIndex((x: any) => x.statement === this.props.statementId);
+            if (foundIndex > -1) {
+                if (answers[foundIndex].answer === id) {
+                    return `scale-cell scale-${id} selected`;
+                }
+            }
+        }
+        return `scale-cell scale-${id}`;
     }
 
     render() {

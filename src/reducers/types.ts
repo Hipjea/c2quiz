@@ -8,3 +8,5 @@ export const IS_ANSWERED = 'IS_ANSWERED';
 
 export const ADD_ANSWER = 'ADD_ANSWER';
 export const GET_ANSWERS = 'GET_ANSWERS';
+
+export const PARSE_RESULTS = 'PARSE_RESULTS';

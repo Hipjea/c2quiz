@@ -1,24 +1,19 @@
-import React, { Component } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Settings from '../components/Settings';
-import ScoreBar from '../components/ScoreBar';
-import CategoriesList from './CategoriesList';
+import React from 'react';
+import { Switch, Route, withRouter, RouteComponentProps } from 'react-router-dom';
+import Quiz from './Quiz';
+import Results from './Results';
 
-class App extends Component {
+class App extends React.Component<RouteComponentProps<any>> {
     render() {
         return (
-            <main>
-                <Header />
-                <div className="container">
-                    <Settings />
-                    <ScoreBar />
-                    <CategoriesList />
-                    <Footer />
-                </div>
-            </main>
+            <React.Fragment>
+                <Switch>
+                    <Route exact path="/" component={ Quiz } />
+                    <Route exact path="/resultats" component={ Results } />
+                </Switch>
+            </React.Fragment>
         );
     }
 }
 
-export default App;
+export default withRouter(App);

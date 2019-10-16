@@ -25,7 +25,6 @@ export function reducer(state = initialState, action: any): TAnswersData {
       let newAnswers: any = state.answers;
       newAnswers = removeItem(newAnswers, action);
       newAnswers = insertItem(newAnswers, action);
-  
       return { 
         ...state, 
         answers: newAnswers

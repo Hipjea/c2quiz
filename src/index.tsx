@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router } from 'react-router-dom';
+import history from './history.js';
 import { Provider } from 'react-redux';
 import { store } from './reducers/index';
 import './style.css';
 import App from './containers/App';
-import CategoriesList from './containers/CategoriesList';
 import * as serviceWorker from './serviceWorker';
 
 const content = (
     <Provider store={store}>
         <main id="main-container">
-            <App />
+            <Router history={history}>
+                <App />
+            </Router>
         </main>
     </Provider>
 );
