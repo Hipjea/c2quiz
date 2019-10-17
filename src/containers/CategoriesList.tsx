@@ -32,7 +32,6 @@ class CategoriesList extends Component<IProps, IState> {
     render() {
         return(
             <div>
-                <h2 className="title mb-5">Categories</h2>
                 { this.props.activeCategories &&
                     this.props.activeCategories.map((category, i) => {
                         return( this.printCategory(category, i) )

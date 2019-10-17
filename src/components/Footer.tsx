@@ -49,7 +49,7 @@ class Footer extends Component<IProps> {
                     :   null
                 }
                 <span className="separator">&nbsp;</span>
-                <span className="btn">
+                <span className="btn pull-right">
                     <NavLink to='/resultats'>Résultats</NavLink>
                 </span>
             </footer>

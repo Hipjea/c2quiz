@@ -57,6 +57,13 @@ header.header h1 {
     font-size: 1.8em;
 }
 
+.title a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1em;
+}
+
 .title sup {
     font-weight: bold;
 }
@@ -94,10 +101,6 @@ header.header h1 {
 .btn a {
     text-decoration: none;
     color: #000000;
-}
-
-.separator {
-    width: 10px;
 }
 
 .settings {
@@ -259,6 +262,11 @@ header.header h1 {
 footer {
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+}
+
+.pull-right {
+    margin-left: auto;
 }
 
 .chart {
@@ -326,6 +334,12 @@ footer {
     color: #636363;
     display: inline-block;
     font-size: 0.7em;
+}
+
+@media screen and (max-width: 575px) {
+    .result-container {
+        flex-direction: column;
+    }
 }
 
 /**

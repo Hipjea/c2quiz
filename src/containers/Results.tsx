@@ -43,13 +43,12 @@ class Results extends Component<IProps> {
                         <div className="data-container">
                             <ul className="data-list">
                                 { data.subcategories && data.subcategories.map((s, i) => {
-                                    return (
-                                        s.name 
-                                            ?   <li key={i}>
-                                                    <span className="name">{ s.name }</span>
-                                                    <span className="score">{ s.score }<span className="percent">%</span></span>
-                                                </li> 
-                                            : null
+                                    return ( s.name 
+                                        ?   <li key={i}>
+                                                <span className="name">{ s.name }</span>
+                                                <span className="score">{ s.score }<span className="percent">%</span></span>
+                                            </li> 
+                                        :   null
                                     )
                                 })}
                             </ul>
