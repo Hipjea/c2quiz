@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { TAnswersData, TAnswerData } from '../common/types';
+import * as answerActions from '../actions/answer';
 
 interface IProps {
     answers: TAnswersData;
+    loadAnswers: any;
 }
 
 interface IRecipeState {
@@ -41,6 +43,10 @@ class ScoreBar extends Component<IProps, IState> {
         this.emoji2 = React.createRef();
         this.emoji3 = React.createRef();
         this.emoji4 = React.createRef();
+    }
+
+    componentDidMount() {
+        this.props.loadAnswers();
     }
 
     UNSAFE_componentWillReceiveProps(newProps: any) {
@@ -129,6 +135,7 @@ const mapStateToProps = (state: IRecipeState) => ({
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
+    loadAnswers: () => dispatch(answerActions.getAnswers())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ScoreBar);

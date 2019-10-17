@@ -2,10 +2,7 @@ import { TCategoriesData, TAnswersData } from "../common/types";
 
 export const downloadPDF = (categories: TCategoriesData, answers: TAnswersData) => async (dispatch: any) => {
     const url = 'http://localhost:8888/wordpress/wp-content/plugins/c2utils/download.php';
-    console.log(JSON.stringify({ 
-        categories: categories,
-        answers: answers
-    }))
+
     try {
         await fetch(url, {
                 method: 'POST',

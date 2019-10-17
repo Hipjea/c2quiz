@@ -5,7 +5,7 @@ export default class Header extends Component {
         return (
             <header className="header">
                 <section>
-                    <h1 className="title">Self-assessment</h1>
+                    <h1 className="title">C<sup>2</sup> pour l'emploi</h1>
                 </section>
             </header>
         );

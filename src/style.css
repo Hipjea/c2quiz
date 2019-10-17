@@ -57,6 +57,10 @@ header.header h1 {
     font-size: 1.8em;
 }
 
+.title sup {
+    font-weight: bold;
+}
+
 .subtitle {
     color: white;
     background: #000000;
@@ -86,6 +90,10 @@ header.header h1 {
 }
 .btn:hover {
     cursor: pointer;
+}
+.btn a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .separator {
@@ -251,6 +259,73 @@ header.header h1 {
 footer {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.chart {
+    position: relative;
+    height: auto;
+}
+
+.results h3 {
+    font-size: 2em;
+}
+
+.results-container {
+    background: #F4F4F4;
+    padding: .7em;
+    margin-bottom: 30px;
+}
+
+.results-container h4 {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.result-container {
+    display: flex;
+}
+
+.data-container {
+    flex: 1 1 auto;
+}
+
+.data-list {
+    display: table;
+    padding-left: 0;
+    list-style-type: none;
+    border-collapse:separate;
+    border-spacing: 7px;
+}
+
+.data-list li {
+    display: table-row;
+    font-weight: bold;
+}
+
+.data-container li span {
+    display: table-cell;
+}
+
+.data-container li .name {
+    padding-right: 15px;
+    font-size: 1.15em;
+    color: #000000;
+}
+
+.data-container li .score {
+    background: #ffd55e;
+    color: #000000;
+    padding: 2px;
+    border-radius: 3px;
+    text-align: center;
+    min-width: 30px;
+}
+
+.data-container li .percent {
+    color: #636363;
+    display: inline-block;
+    font-size: 0.7em;
 }
 
 /**

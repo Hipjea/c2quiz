@@ -47,6 +47,8 @@ export interface TExternalData {}
 
 export interface TResultsData {
     results: Array<TResultData>;
+    answers: Array<TAnswerData>;
+    categories: Array<TCategoryData>;
 }
 
 export interface TResultData {
@@ -60,5 +62,7 @@ export interface TResCategoryData {
 
 export interface TResSubcategoryData {
     name: string;
+    count: number;
+    total: number;
     score: number;
 }

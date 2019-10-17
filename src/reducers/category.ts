@@ -17,12 +17,14 @@ const initialState: TCategoriesData = {
 export function reducer(state = initialState, action: any): TCategoriesData {
   switch (action.type) {
     case FETCH_CATEGORIES:
+      localStorage.setItem('c2-categories', JSON.stringify(action.payload));
+
       return { 
         ...state, 
         categories: action.payload,
         activeCategories: action.payload.slice(0, state.perStep),
         maxStep: action.payload.length
-      };
+      }
     case CHANGE_STEP:
       const way = action.payload;
       const nextStep: number = way === "up" ? state.currentStep+1 : state.currentStep-1;

@@ -25,13 +25,16 @@ export function reducer(state = initialState, action: any): TAnswersData {
       let newAnswers: any = state.answers;
       newAnswers = removeItem(newAnswers, action);
       newAnswers = insertItem(newAnswers, action);
+      localStorage.setItem('c2-answers', JSON.stringify(newAnswers));
+
       return { 
         ...state, 
         answers: newAnswers
       };
     case GET_ANSWERS:
       return {
-        ...state
+        ...state,
+        answers: action.payload
       }
     default:
       return state;

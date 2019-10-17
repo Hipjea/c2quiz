@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import PolarChart from '../components/PolarChart';
+import { NavLink } from 'react-router-dom';
 import { TAnswersData, TCategoriesData, TResultsData } from '../common/types';
 import * as resultActions from '../actions/result';
 
 interface IProps {
   categories: TCategoriesData;
   answers: TAnswersData;
+  loadAnswers: any;
   parseResults: any;
   results: TResultsData[] | any;
+  loadedAnswers: TAnswersData | any;
 };
 
 interface IState {
@@ -21,29 +24,42 @@ interface IState {
     },
     result: {
         results: TResultsData;
+        answers: TAnswersData;
     }
 }
 
 class Results extends Component<IProps> {
     componentDidMount() {
-        this.props.parseResults(this.props.categories, this.props.answers)
+        this.props.loadAnswers();
+        this.props.parseResults(this.props.categories, this.props.answers);
     }
 
     printCategory(data: any) {
-        console.log(data, data.name);
-
         if (data) {
             return (
-                <React.Fragment key={data.name}>
+                <div key={data.name} className="results-container">
                     <h4>{ data.name }</h4>
-                    <ul>
-                        { data.subcategories && data.subcategories.map((s, i) => {
-                            return (
-                                s.name ? <li key={i}>{ s.name } - { s.score }</li> : null
-                            )
-                        })}
-                    </ul>
-                </React.Fragment>
+                    <div className="result-container">
+                        <div className="data-container">
+                            <ul className="data-list">
+                                { data.subcategories && data.subcategories.map((s, i) => {
+                                    return (
+                                        s.name 
+                                            ?   <li key={i}>
+                                                    <span className="name">{ s.name }</span>
+                                                    <span className="score">{ s.score }<span className="percent">%</span></span>
+                                                </li> 
+                                            : null
+                                    )
+                                })}
+                            </ul>
+                        </div>
+
+                        <div className="chart-container">
+                            <PolarChart data={ data.subcategories } />
+                        </div>
+                    </div>
+                </div>
             )
         }
     }
@@ -54,14 +70,19 @@ class Results extends Component<IProps> {
         return (
             <main>
                 <Header />
-                <div className="container">
-                    <h3>Results</h3>
+                <div className="container results">
+                    <h3>Résultats</h3>
                     { results && 
                         results.map(r => {
                             return this.printCategory(r.category)
                         })
                     }
-                    <Footer />
+                                    
+                    <footer>
+                        <span className="btn">
+                            <NavLink to='/'>Accueil</NavLink>
+                        </span>
+                    </footer>
                 </div>
             </main>
         );
@@ -71,10 +92,12 @@ class Results extends Component<IProps> {
 const mapStateToProps =  (state: IState) => ({
     categories: state.category.categories,
     answers: state.answer.answers,
-    results: state.result.results
+    results: state.result.results,
+    loadedAnswers: state.result.answers
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
+    loadAnswers: () => dispatch(resultActions.loadAnswers()),
     parseResults: (categories: TCategoriesData, answers: TAnswersData) => dispatch(resultActions.parseResults(categories, answers))
 });
 
